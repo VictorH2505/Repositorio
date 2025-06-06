@@ -4,10 +4,10 @@ using namespace std;
 
 int main(){
     int numero;
-    int intento = 1;
+    int intento = 0;
 
     do {
-    cout << "Intente adivinar un número aleatorio entre 1 y 50" << endl;
+    cout << "Intente adivinar un numero aleatorio entre 1 y 50" << endl;
     cout << "==================================================" << endl;    
     cout << "Ingrese su intento" << endl;    
     cin >> numero ;
@@ -33,7 +33,7 @@ int main(){
         cout << "Ingrese un valor valido" <<endl;
     }
     }
-    while (intento < 5 || numero =! 41);
+    while (intento < 5 && numero != 41);
     cout << "Se acabaron los intentos" <<endl;
 
     return 0;
